@@ -1,4 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  font-family: Roboto, sans-serif;
+}
+
+.tabs {
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .tab__title {
@@ -8,6 +20,28 @@
   line-height: 30px;
   margin: 0px 4px;
   border: 1px solid black;
+  border-width: 0;
   text-align: center;
+  box-sizing: border-box;
+  color: #5E80B0;
+  border-radius: 5px 5px 0 0;
 }
 
+.tab__title:hover {
+  border-width: 1px;
+}
+
+.tab__section {
+  border-top: 1px solid black;
+  position: relative;
+  top: -2px;
+  padding: 10px;
+}
+
+.tab__title-active {
+  position: relative;
+  border-width: 1px;
+  border-bottom: 1px solid white;
+  z-index: 1;
+  color: #39393A;
+}
